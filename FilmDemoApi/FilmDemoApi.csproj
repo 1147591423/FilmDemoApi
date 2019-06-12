@@ -159,6 +159,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\BangDanController.cs" />
+    <Compile Include="Controllers\CinemaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginAndFirstPageController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -261,6 +262,10 @@
     <ProjectReference Include="..\Model\FilmModel.csproj">
       <Project>{1914539c-b810-4475-946b-af9fb1d1fd48}</Project>
       <Name>FilmModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieModel\MovieModel.csproj">
+      <Project>{5a0ec7cb-1f0b-44d2-8e4d-1ec101b1cb4e}</Project>
+      <Name>MovieModel</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

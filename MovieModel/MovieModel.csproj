@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8311691-CA97-48A1-A632-8CAFEBE06364}</ProjectGuid>
+    <ProjectGuid>{5A0EC7CB-1F0B-44D2-8E4D-1EC101B1CB4E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1DAL</RootNamespace>
-    <AssemblyName>ClassLibrary1DAL</AssemblyName>
+    <RootNamespace>MovieModel</RootNamespace>
+    <AssemblyName>MovieModel</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,15 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.1.60.6\lib\net451\Dapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\小浩\Desktop\helper\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,25 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CinemaDAL.cs" />
-    <Compile Include="DBHelperWithProc.cs" />
-    <Compile Include="FilmDal.cs" />
-    <Compile Include="FirstPage.cs" />
-    <Compile Include="Login.cs" />
+    <Compile Include="ChCinema.cs" />
+    <Compile Include="CinemaList.cs" />
+    <Compile Include="district.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Model\FilmModel.csproj">
-      <Project>{1914539c-b810-4475-946b-af9fb1d1fd48}</Project>
-      <Name>FilmModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MovieModel\MovieModel.csproj">
-      <Project>{5a0ec7cb-1f0b-44d2-8e4d-1ec101b1cb4e}</Project>
-      <Name>MovieModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
