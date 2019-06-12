@@ -18,7 +18,7 @@ namespace FilmDAL
         IDbConnection db = new SqlConnection(sqlconn);
         // MD5加密
         public static string GetMd5(string str)
-        {
+        { 
             MD5 md5 = MD5.Create();
             byte[] buffer = Encoding.Default.GetBytes(str);
             byte[] Md5buffer = md5.ComputeHash(buffer);
