@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBHelperWithProc.cs" />
     <Compile Include="FilmDal.cs" />
     <Compile Include="FirstPage.cs" />
     <Compile Include="Login.cs" />
@@ -59,9 +58,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\FilmModel.csproj">
+    <ProjectReference Include="..\Log\Film.Log.csproj">
+      <Project>{9e7e3feb-bfb2-438a-b37e-0d69d1c752db}</Project>
+      <Name>Film.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Film.Model.csproj">
       <Project>{1914539c-b810-4475-946b-af9fb1d1fd48}</Project>
-      <Name>FilmModel</Name>
+      <Name>Film.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

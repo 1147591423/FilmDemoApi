@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Newtonsoft.Json;
 
-namespace FilmDAL
+namespace Film.Common
 {
     public static class DBHelper
     {

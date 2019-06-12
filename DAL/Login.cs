@@ -10,7 +10,7 @@ using Dapper;
 using FilmModel;
 using System.Security.Cryptography;
 
-namespace FilmDAL
+namespace Film.DAL
 {
     public class Login
     {

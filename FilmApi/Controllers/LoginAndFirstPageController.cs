@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web.Http;
-using FilmDAL;
+using Film.DAL;
 using FilmModel;
 namespace FilmDemoApi.Controllers
 {
@@ -15,9 +15,12 @@ namespace FilmDemoApi.Controllers
         Login lg = new Login();
         FirstPage fp = new FirstPage();
         [HttpGet]
-        public UserInfo UserLogin(string Num, string Password)
+        public UserInfo UserLogin(string userName, string passWord)
         {
-            return lg.UserLogin(Num,Password);
+            Log.FileLogService.Instance.Info($"用户名{userName}-密码{passWord}");
+
+
+            return lg.UserLogin(userName, passWord);
         }
         [HttpGet]
         public List<FilmInfo> GetFilm()

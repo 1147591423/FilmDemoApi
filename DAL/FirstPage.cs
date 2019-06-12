@@ -9,7 +9,7 @@ using FilmModel;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace FilmDAL
+namespace Film.DAL
 {
     public class FirstPage
     {
