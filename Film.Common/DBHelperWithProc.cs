@@ -15,6 +15,11 @@ namespace Film.Common
         //获取web.config里的连接字符串
         public static string strCon = " Data Source=DESKTOP-S9913EK;Initial Catalog=FilmDemo;Persist Security Info=True;User ID=sa;pwd=123";
 
+
+
+
+
+
         /// <summary>
         /// 将DataTable装换为List
         /// </summary>
