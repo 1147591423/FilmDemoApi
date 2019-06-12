@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using FilmDAL;
+using Film.DAL;
 using FilmModel;
 namespace FilmDemoApi.Controllers
 {

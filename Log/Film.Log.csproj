@@ -49,7 +49,19 @@
     <Compile Include="ILogService.cs" />
     <Compile Include="InternalLogger.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ExamSystem.Log.dll" />
+    <Content Include="bin\Debug\ExamSystem.Log.pdb" />
+    <Content Include="bin\Debug\log4net.dll" />
+    <Content Include="Log4.Log.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
